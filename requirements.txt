@@ -1,7 +1,12 @@
 requests
-pandas
+pandas>=2.2
 numpy
 matplotlib
-pulp
+# PuLP 4.x replaced the classic API (LpVariable(name, lowBound=...) breaks); its bundled
+# CBC is x86-only on Apple Silicon, so we solve with HiGHS via highspy.
+pulp>=2.8,<3
+highspy
+pytest
 jupyter
-dotenv
+# notebook uses `from dotenv import load_dotenv`; the PyPI package is python-dotenv
+python-dotenv
