@@ -10,7 +10,7 @@
   - station wide charging power per 15 min
 - uncertainty: 
   - driver may depart earlier or later than stated
-  - use per car undertainty (budget uncertainty)
+  - use per car uncertainty (budget uncertainty)
 -  MPC: 
     - simple way, reoptimize whenever current setting changes: any new arrival or any departure that is outside of the uncertainty budget. 
     - driver changes inputs (charge level, departure time)
